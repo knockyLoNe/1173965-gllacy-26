@@ -54,13 +54,15 @@
                         </select>
                      </div>
 
-                     <div>
-                        <p>Цена: 100 руб. – 500 руб.</p>
-                        <input type="range" min="0" max="10">
-                     </div>
+                     <form>
+                        <fieldset>
+                        <label for="price">Цена: 100 руб. – 500 руб.</label>
+                        <div><input type="range" name="price" id="price" min="0" max="10"></div>
+                        </fieldset>
+                     </form>
 
                      <div>
-                        <p>Жирность:</p>
+                        <label for="jir">Жирность:</label>
                         <p><input name="jir" type="radio" value="0%">0%</p>
                         <p><input name="jir" type="radio" value="до 10%" checked>до 10%</p>
                         <p><input name="jir" type="radio" value="до 30%">до 30%</p>
@@ -76,7 +78,7 @@
                         <p><input type="checkbox" name="option2" value="a5">Джемы</p>
                      </div>
 
-                     <li><button type="submit">Применить</button></li>
+                     <button type="submit">Применить</button>
 
                   </section>
 
@@ -242,13 +244,13 @@
 
                     <div>
                         <ul>
-                            <li>&lt;</li>
+                            <li><a href="#">&lt;</a></li>
                             <li>1</li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
-                            <li>&gt;</li>
+                            <li><a href="#">&gt;</a></li>
                         </ul>
                         </div>
 
