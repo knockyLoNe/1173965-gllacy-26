@@ -61,22 +61,22 @@
                         </fieldset>
                      </form>
 
-                     <div>
+                     <form>
                         <label for="fat">Жирность:</label>
-                        <p><input name="fat" type="radio" value="0%">0%</p>
-                        <p><input name="fat" type="radio" value="до 10%" checked>до 10%</p>
-                        <p><input name="fat" type="radio" value="до 30%">до 30%</p>
-                        <p><input name="fat" type="radio" value="вышк 30%">выше 30%</p>
-                     </div>
+                        <p><input name="fat" id="fat" type="radio" value="0%">0%</p>
+                        <p><input name="fat" id="fat" type="radio" value="до 10%" checked>до 10%</p>
+                        <p><input name="fat" id="fat" type="radio" value="до 30%">до 30%</p>
+                        <p><input name="fat" id="fat" type="radio" value="вышк 30%">выше 30%</p>
+                     </form>
 
-                     <div>
-                        <p>Наполнители:</p>
-                        <p><input type="checkbox" name="option2" value="a1" checked>Шоколадные</p>
-                        <p><input type="checkbox" name="option2" value="a2" checked>Сахарные присыпки</p>
-                        <p><input type="checkbox" name="option2" value="a3">Фрукты</p>
-                        <p><input type="checkbox" name="option2" value="a4">Сиропы</p>
-                        <p><input type="checkbox" name="option2" value="a5">Джемы</p>
-                     </div>
+                     <form>
+                        <label for="checkbox">Наполнители:</label>
+                        <p><input type="checkbox" id="checkbox" name="option1" value="a1" checked>Шоколадные</p>
+                        <p><input type="checkbox" id="checkbox" name="option2" value="a2" checked>Сахарные присыпки</p>
+                        <p><input type="checkbox" id="checkbox" name="option3" value="a3">Фрукты</p>
+                        <p><input type="checkbox" id="checkbox" name="option4" value="a4">Сиропы</p>
+                        <p><input type="checkbox" id="checkbox" name="option5" value="a5">Джемы</p>
+                     </form>
 
                      <button type="submit">Применить</button>
 
@@ -284,13 +284,37 @@
                       </footer>
               
               
-                      <section>
-                          <h2>Личный кабинет</h2>
-                          <p>Введите свой логин и пароль.</p>
-                          <!--Здесь будет форма-->
-                          <button type="button">Закрыть </button>
-                       </section>
-              
+<!--Личный кабинет-->
+<div>
+        <h2>Личный кабинет</h2>
+        
+        <form  class="login-form" action="" method="post">
+            <p class="login-user-login" >
+              <label for="user-login">Электронная почта</label>
+              <input id="user-login" type="text" name="login" placeholder="email@example.com">
+            </p>
+            <p class="login-user-password">
+              <label for="user-password">Пароль</label>
+              <input id="user-password" type="password" name="password" placeholder="••••••••">
+            </p>
+            <button class="button" type="submit">Войти </button>
+            <p>
+                <a  href="#">Забыли пароль?</a>
+                <a  href="#">Новая регистрация</a>
+            </p>
+        </form>
+</div>
+
+
+
+<!-- Корзина -->
+
+<div>
+
+        <button class="button" type="submit">Оформить заказ</button>
+
+</div>
+
               
               
     </body>

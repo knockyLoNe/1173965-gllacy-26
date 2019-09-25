@@ -11,15 +11,31 @@
             <nav>
               <a><img src="img/Logo.svg" width="111" height="24" alt="Логотип магазина Gllacy Shop "></a>
 
+              <select>Каталог
+                
+              </select>
+
               <ul>
-                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a>  
+                        <ul>
+                            <li>Новинки</li>
+                            <li>Сливочное</li>
+                            <li>Щербеты</li>
+                            <li>Фруктовый лед</li>
+                            <li>Мелорин</li>
+                        </ul>                               
+                </li>
                 <li><a href=" ">Доставка и оплата</a></li>
                 <li><a href=" ">О компании</a></li>
              </ul>
 
-
               <ul>
-                <li><button type="button">Поиск</button></li>
+                <li> 
+                    <form action="" method="get">
+                    <input name="s" placeholder="Что ищем?" type="search"></button>
+                    </form>
+                </li>
+
                 <li><button type="button">Войти</button></li>
                 <li><button type="button">Корзина</button></li>
              </ul>
@@ -202,13 +218,42 @@
         </div>
         </footer>
 
+<!--Личный кабинет-->
+  <div>
+        <h2>Личный кабинет</h2>
+        
+        <form  class="login-form" action="" method="post">
+            <p class="login-user-login" >
+              <label for="user-login">Электронная почта</label>
+              <input id="user-login" type="text" name="login" placeholder="email@example.com">
+            </p>
+            <p class="login-user-password">
+              <label for="user-password">Пароль</label>
+              <input id="user-password" type="password" name="password" placeholder="••••••••">
+            </p>
+            <button class="button" type="submit">Войти </button>
+            <p>
+                <a  href="#">Забыли пароль?</a>
+                <a  href="#">Новая регистрация</a>
+            </p>
+        </form>
+      </div>
 
-        <section>
-            <h2>Личный кабинет</h2>
-            <p>Введите свой логин и пароль.</p>
-            <!--Здесь будет форма-->
-            <button type="button">Закрыть </button>
-         </section>
+
+<!-- Центральная выпадающая кнопка -->
+
+  <div>
+    <h2>Мы обязательно вам ответим!</h2>
+      <form action="" method="post">
+
+        
+        <input type="text" placeholder="Как вас зовут?">
+        <input type="text" placeholder="Ваша почта для ответа?">
+        <textarea name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea></p>
+
+        <button class="button" type="submit">Отправить</button>
+      </form>
+  </div>
 
 
 
