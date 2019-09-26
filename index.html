@@ -11,18 +11,14 @@
             <nav>
               <a><img src="img/Logo.svg" width="111" height="24" alt="Логотип магазина Gllacy Shop "></a>
 
-              <select>Каталог
-                
-              </select>
-
               <ul>
                 <li><a href="catalog.html">Каталог</a>  
                         <ul>
-                            <li>Новинки</li>
-                            <li>Сливочное</li>
-                            <li>Щербеты</li>
-                            <li>Фруктовый лед</li>
-                            <li>Мелорин</li>
+                            <li><a href=" ">Новинки</a></li>
+                            <li><a href=" ">Сливочное</a></li>
+                            <li><a href=" ">Щербеты</a></li>
+                            <li><a href=" ">Фруктовый лед</a></li>
+                            <li><a href=" ">Мелорин</a></li>
                         </ul>                               
                 </li>
                 <li><a href=" ">Доставка и оплата</a></li>
@@ -32,7 +28,9 @@
               <ul>
                 <li> 
                     <form action="" method="get">
-                    <input name="s" placeholder="Что ищем?" type="search"></button>
+                    <a href="">
+                      <input name="s" placeholder="Что ищем?" type="search">
+                    </a>
                     </form>
                 </li>
 
@@ -72,13 +70,13 @@
                 <article>
                     <h3>Малинка даром!</h3>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <button type="button">Хочу варенье!</button>
+                    <a href=" ">Хочу варенье!</a>
                 </article>
 
                 <article>
                     <h3>Шоколадки даром!</h3>
                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                    <button type="button">Хочу шоколадки!</button>
+                    <a href=" ">Хочу шоколадки!</a>
                 </article>
               </section>
 
@@ -225,11 +223,11 @@
         <form  class="login-form" action="" method="post">
             <p class="login-user-login" >
               <label for="user-login">Электронная почта</label>
-              <input id="user-login" type="text" name="login" placeholder="email@example.com">
+              <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
             </p>
             <p class="login-user-password">
               <label for="user-password">Пароль</label>
-              <input id="user-password" type="password" name="password" placeholder="••••••••">
+              <input id="user-password" type="password" name="password" placeholder="••••••••" required>
             </p>
             <button class="button" type="submit">Войти </button>
             <p>
@@ -246,10 +244,10 @@
     <h2>Мы обязательно вам ответим!</h2>
       <form action="" method="post">
 
-        
-        <input type="text" placeholder="Как вас зовут?">
-        <input type="text" placeholder="Ваша почта для ответа?">
-        <textarea name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea></p>
+        <label for="send">Рассылка</label>
+        <input id="send" type="text" placeholder="Как вас зовут?" required>
+        <input id="send" type="text" placeholder="Ваша почта для ответа?" required>
+        <textarea id="send" name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea></p>
 
         <button class="button" type="submit">Отправить</button>
       </form>
