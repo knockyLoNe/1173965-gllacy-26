@@ -27,15 +27,39 @@
 
               <ul>
                 <li> 
+                    <button><span>Открыть поиск</span></button>
                     <form action="" method="get">
-                    <a href="">
-                      <input name="s" placeholder="Что ищем?" type="search">
-                    </a>
+                    
+                      <input name="s" placeholder="Что ищем?" type="search" required>
+                  
                     </form>
                 </li>
 
-                <li><button type="button">Войти</button></li>
-                <li><button type="button">Корзина</button></li>
+                <li><button type="button">Войти</button>
+                
+                <!--Личный кабинет-->
+                    <div>
+                      <h2>Личный кабинет</h2>
+                      
+                      <form  class="login-form" action="" method="post">
+                          <p class="login-user-login" >
+                            <label for="user-login">Электронная почта</label>
+                            <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
+                          </p>
+                          <p class="login-user-password">
+                            <label for="user-password">Пароль</label>
+                            <input id="user-password" type="password" name="password" placeholder="••••••••" required>
+                          </p>
+                          <button class="button" type="submit">Войти </button>
+                          <p>
+                              <a  href="#">Забыли пароль?</a>
+                              <a  href="#">Новая регистрация</a>
+                          </p>
+                      </form>
+                    </div>
+                  </li>
+               
+                  <li><button type="button">Корзина</button></li>
              </ul>
 
             </nav>
@@ -88,7 +112,7 @@
                         <!---->
                         <li> 
                                 <a href=" ">
-                                <img src="img/1.jpg" width="165" height="165" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><span>310 ₽/кг</span></a>
+                                <img src="img/1.jpg" width="165" height="165" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><span>310 ₽</span><span>/кг</span></a>
                              
                                     <h3>
                                     <a href=" ">
@@ -99,7 +123,7 @@
                          <!---->
                          <li>
                                    <a href=" ">
-                                   <img src="img/2.jpg" width="165" height="165" alt="Сливочно-кофейное с кусочками шоколада"> <span>380 ₽/кг</span></a>
+                                   <img src="img/2.jpg" width="165" height="165" alt="Сливочно-кофейное с кусочками шоколада"> <span>380 ₽</span><span>/кг</span></a>
                                 
                                        <h3>
                                        <a href=" ">
@@ -110,7 +134,7 @@
                         <!---->
                         <li>
                                    <a href=" ">
-                                   <img src="img/3.jpg" width="165" height="165" alt="Сливочно-клубничное с присыпкой из белого шоколада"><span>355 ₽/кг</span></a>
+                                   <img src="img/3.jpg" width="165" height="165" alt="Сливочно-клубничное с присыпкой из белого шоколада"><span>355 ₽</span><span>/кг</span></a>
                                 
                                        <h3>
                                        <a href=" ">
@@ -123,7 +147,7 @@
                              
                                 
                                    <a href=" ">
-                                   <img src="img/4.jpg" width="165" height="165" alt="Сливочное крем-брюле с карамельной подливкой"><span>415 ₽/кг</span></a>
+                                   <img src="img/4.jpg" width="165" height="165" alt="Сливочное крем-брюле с карамельной подливкой"><span>415 ₽</span><span>/кг</span></a>
                                 
                                        <h3>
                                        <a href=" ">
@@ -163,7 +187,7 @@
             <h2>Рассылка</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <form name="mail" method="post" action="URL" >
-            <input type="email" size="40" placeholder="Электронная почта">
+            <input type="email" size="40" placeholder="Электронная почта" required>
             <button type="submit">Отправить</button>
             </form>
           </section>
@@ -216,26 +240,7 @@
         </div>
         </footer>
 
-<!--Личный кабинет-->
-  <div>
-        <h2>Личный кабинет</h2>
-        
-        <form  class="login-form" action="" method="post">
-            <p class="login-user-login" >
-              <label for="user-login">Электронная почта</label>
-              <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
-            </p>
-            <p class="login-user-password">
-              <label for="user-password">Пароль</label>
-              <input id="user-password" type="password" name="password" placeholder="••••••••" required>
-            </p>
-            <button class="button" type="submit">Войти </button>
-            <p>
-                <a  href="#">Забыли пароль?</a>
-                <a  href="#">Новая регистрация</a>
-            </p>
-        </form>
-      </div>
+
 
 
 <!-- Центральная выпадающая кнопка -->
@@ -244,12 +249,15 @@
     <h2>Мы обязательно вам ответим!</h2>
       <form action="" method="post">
 
-        <label for="send">Рассылка</label>
-        <input id="send" type="text" placeholder="Как вас зовут?" required>
-        <input id="send" type="text" placeholder="Ваша почта для ответа?" required>
-        <textarea id="send" name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea></p>
+        <fieldset>
+        <legend>Рассылка</legend>
+        <label><input  type="text" placeholder="Как вас зовут?" required></label>
+        <label><input  type="email" placeholder="Ваша почта для ответа?" required></label>
+        <label><textarea name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea></label>
 
         <button class="button" type="submit">Отправить</button>
+        </fieldset>
+        
       </form>
   </div>
 

@@ -19,9 +19,71 @@
 
 
               <ul>
-                <li><button type="button">Поиск</button></li>
-                <li><button type="button">Войти</button></li>
-                <li><button type="button">Корзина</button></li>
+                        <li> 
+                            <button><span>Открыть поиск</span></button>
+                            <form action="" method="get">
+
+                            <input name="s" placeholder="Что ищем?" type="search" required>
+                            
+                            </form>
+                        </li>
+        
+
+
+        <li><button type="button">Войти</button>
+                
+            <!--Личный кабинет-->
+                <div>
+                  <h2>Личный кабинет</h2>
+                  
+                  <form  class="login-form" action="" method="post">
+                      <p class="login-user-login" >
+                        <label for="user-login">Электронная почта</label>
+                        <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
+                      </p>
+                      <p class="login-user-password">
+                        <label for="user-password">Пароль</label>
+                        <input id="user-password" type="password" name="password" placeholder="••••••••" required>
+                      </p>
+                      <button class="button" type="submit">Войти </button>
+                      <p>
+                          <a  href="#">Забыли пароль?</a>
+                          <a  href="#">Новая регистрация</a>
+                      </p>
+                  </form>
+                </div>
+                </li>
+                <li><button class="not-empty-basket" type="button">2 товара</button>
+                
+                    <form>
+                    <table>
+                            <tr>
+                                <td><button type="button"><span>Кнопка удаления товара</span></button></td>
+                                <td><a href=""><img src="img/1.jpg" width="33" height="33" alt="фото товара"></a></td>
+                                <td><a href="">Пломбир с апельсиновым джемом</a></td>
+                                <td>1,5 кг х <span>200 руб.</span></td>
+                                <td>300 руб.</td>
+                            </tr>
+
+                            <tr>
+                                <td><button type="button"><span>Кнопка удаления товара</span></button></td>
+                                <td><a href=""><img src="img/2.jpg" width="33" height="33" alt="фото товара"></a></td>
+                                <td><a href="">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                                <td>1,5 кг х <span>300 руб.</span></td>
+                                <td>400 руб.</td>
+                            </tr>
+
+                    </table>
+
+                            <span>Итого: 750 руб.</span>
+
+
+                            <button type="submit">Оформить заказ</button>
+                    
+                    </form>
+                
+                
+                </li>
              </ul>
 
             </nav>
@@ -62,20 +124,24 @@
                      </form>
 
                      <form>
-                        <label for="fat-1">Жирность:</label>
-                        <p><input name="fat" id="fat-1" type="radio" value="0%">0%</p>
-                        <p><input name="fat" id="fat-1" type="radio" value="до 10%" checked>до 10%</p>
-                        <p><input name="fat" id="fat-1" type="radio" value="до 30%">до 30%</p>
-                        <p><input name="fat" id="fat-1" type="radio" value="вышк 30%">выше 30%</p>
+                        <fieldset>
+                        <legend>Жирность:</legend>
+                        <label><input name="fat"  type="radio" value="0%"><span>0%</span></label>
+                        <label><input name="fat"  type="radio" value="до 10%" checked><span>до 10%</span></label>
+                        <label><input name="fat"  type="radio" value="до 30%"><span>до 30%</span></label>
+                        <label><input name="fat"  type="radio" value="вышe 30%"><span>выше 30%</span></label>
+                        </fieldset>
                      </form>
 
                      <form>
-                        <label for="checkbox">Наполнители:</label>
-                        <p><input type="checkbox" id="checkbox" name="option1" value="a1" checked>Шоколадные</p>
-                        <p><input type="checkbox" id="checkbox" name="option2" value="a2" checked>Сахарные присыпки</p>
-                        <p><input type="checkbox" id="checkbox" name="option3" value="a3">Фрукты</p>
-                        <p><input type="checkbox" id="checkbox" name="option4" value="a4">Сиропы</p>
-                        <p><input type="checkbox" id="checkbox" name="option5" value="a5">Джемы</p>
+                        <fieldset> 
+                        <legend>Наполнители:</legend>
+                        <label><input type="checkbox"  name="option" value="Шоколадные" checked><span>Шоколадные</span></label>
+                        <label><input type="checkbox"  name="option" value="Сахарные присыпки" checked><span>Сахарные присыпки</span></label>
+                        <label><input type="checkbox"  name="option" value="Фрукты"><span>Фрукты</span></label>
+                        <label><input type="checkbox"  name="option" value="Сиропы"><span>Сиропы</span></label>
+                        <label><input type="checkbox"  name="option" value="Джемы"><span>Джемы</span></label>
+                        </fieldset>
                      </form>
 
                      <button type="submit">Применить</button>
@@ -284,36 +350,11 @@
                       </footer>
               
               
-<!--Личный кабинет-->
-<div>
-        <h2>Личный кабинет</h2>
-        
-        <form  class="login-form" action="" method="post">
-            <p class="login-user-login" >
-              <label for="user-login">Электронная почта</label>
-              <input id="user-login" type="text" name="login" placeholder="email@example.com">
-            </p>
-            <p class="login-user-password">
-              <label for="user-password">Пароль</label>
-              <input id="user-password" type="password" name="password" placeholder="••••••••">
-            </p>
-            <button class="button" type="submit">Войти </button>
-            <p>
-                <a  href="#">Забыли пароль?</a>
-                <a  href="#">Новая регистрация</a>
-            </p>
-        </form>
-</div>
 
 
 
-<!-- Корзина -->
 
-<div>
 
-        <button class="button" type="submit">Оформить заказ</button>
-
-</div>
 
               
               
