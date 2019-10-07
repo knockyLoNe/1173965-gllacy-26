@@ -3,17 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    
+    <link ref="stylesheet" href="css/normalize.css">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+   
   </head>
   <body>
 
         <!--Шапка-->
         <header>
             <nav>
-              <a><img src="img/Logo.svg" width="111" height="24" alt="Логотип магазина Gllacy Shop "></a>
+              <a><img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop "></a>
 
-              <ul>
+              <ul class="site-navigation">
                 <li><a href="catalog.html">Каталог</a>  
-                        <ul>
+                        <ul class="catalog-sub-menu">
                             <li><a href=" ">Новинки</a></li>
                             <li><a href=" ">Сливочное</a></li>
                             <li><a href=" ">Щербеты</a></li>
@@ -25,7 +30,7 @@
                 <li><a href=" ">О компании</a></li>
              </ul>
 
-              <ul>
+              <ul class="list-navigation">
                 <li> 
                     <button><span>Открыть поиск</span></button>
                     <form action="" method="get">
@@ -38,7 +43,7 @@
                 <li><button type="button">Войти</button>
                 
                 <!--Личный кабинет-->
-                    <div>
+                    <div class="login">
                       <h2>Личный кабинет</h2>
                       
                       <form  class="login-form" action="" method="post">
@@ -71,7 +76,7 @@
 
         <main>
 
-            <h1>Сливочное мороженое</h1>
+            <h1 class="hide-text">Сливочное мороженое</h1>
             <div>
             <p>С 10 до 20, ежедневно</p>
             <p>8 812 450-25-25</p>
@@ -89,15 +94,15 @@
                 <button type="button">3</button>
               </section>
         
-              <section>
-                <h2>Предложения</h2>
-                <article>
+              <section class="offers">
+               <!-- <h2 class="hide-text">Предложения</h2> -->
+                <article class="raspberry">
                     <h3>Малинка даром!</h3>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                     <a href=" ">Хочу варенье!</a>
                 </article>
 
-                <article>
+                <article class="chocolade">
                     <h3>Шоколадки даром!</h3>
                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                     <a href=" ">Хочу шоколадки!</a>
@@ -105,9 +110,9 @@
               </section>
 
                 <div>
-                    <h2>Список мороженного</h2>
+                    <h2 class="hide-text">Список мороженного</h2>
 
-                    <ul>
+                    <ul class="list-navigation">
 
                         <!---->
                         <li> 
@@ -161,9 +166,9 @@
 
            </section>
 
-          <h1>Магазин Глэйси</h1>
+          <h1 class="hide-text">Магазин Глэйси</h1>
 
-          <section>
+          <section class="waffle">
             <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
 
             <ul>
@@ -175,26 +180,26 @@
           </section>
               
           <!--Новости-->
-        <section>
-          <section>
+        <section class="news-send">
+          <div class="news">
             <h2>Новое в нашем блоге</h2>
             <a href=" ">10 способов сервировки
               фруктовых щербетов к
               столу</a>
-          </section>
+            </div>
               <!--Рассылка-->
-          <section>
+          <div>
             <h2>Рассылка</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <form name="mail" method="post" action="URL" >
             <input type="email" size="40" placeholder="Электронная почта" required>
             <button type="submit">Отправить</button>
             </form>
-          </section>
+          </div>
         </section>
 
         <!--Блок КАРТА-->
-        <section>
+        <section class="map">
             
             <div>
             <h2>Контактная информация</h2>
@@ -245,7 +250,7 @@
 
 <!-- Центральная выпадающая кнопка -->
 
-  <div>
+  <div class="answer">
     <h2>Мы обязательно вам ответим!</h2>
       <form action="" method="post">
 

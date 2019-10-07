@@ -3,22 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    
+    <link ref="stylesheet" href="css/normalize.css">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
 
         <!--Шапка-->
         <header>
             <nav>
-              <a><img src="img/Logo.svg" width="111" height="24" alt="Логотип магазина Gllacy Shop "></a>
+              <a><img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop "></a>
 
-              <ul>
+              <ul class="site-navigation">
                 <li>Каталог</li>
                 <li><a href=" ">Доставка и оплата</a></li>
                 <li><a href=" ">О компании</a></li>
              </ul>
 
 
-              <ul>
+              <ul class="list-navigation">
                         <li> 
                             <button><span>Открыть поиск</span></button>
                             <form action="" method="get">
@@ -33,7 +37,7 @@
         <li><button type="button">Войти</button>
                 
             <!--Личный кабинет-->
-                <div>
+                <div class="login">
                   <h2>Личный кабинет</h2>
                   
                   <form  class="login-form" action="" method="post">
@@ -55,7 +59,7 @@
                 </li>
                 <li><button class="not-empty-basket" type="button">2 товара</button>
                 
-                    <form>
+                    <form class="basket">
                     <table>
                             <tr>
                                 <td><button type="button"><span>Кнопка удаления товара</span></button></td>
@@ -92,7 +96,7 @@
         <!--Главная-->
 
         <main>
-                    <ul>
+                    <ul class="main-menu">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href=" ">Каталог</a></li>
                         <li><a>Сливочное</a></li>
@@ -149,9 +153,9 @@
                   </section>
 
                     <section>
-                            <h2>Список мороженного</h2>
+                            <h2 class="hide-text">Список мороженного</h2>
 
-                            <ul>
+                            <ul class="list-navigation">
 
                                 <!---->
                                 <li> 
@@ -308,7 +312,7 @@
 
                     <!-- Тут будет пагинация-->
 
-                    <div>
+                    <div class="pagination">
                         <ul>
                             <li><a href=" ">&lt;</a></li>
                             <li>1</li>
