@@ -36,24 +36,24 @@ a {
 }
 
 .waffle {
-    background-image: url('img/waffel.jpg')
+    background-image: url('/img/waffel.jpg')
 }
 
 .raspberry {
-    background-image: url('img/raspberry.jpg');
+    background-image: url('/img/raspberry.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .news {
-    background-image: url('img/strawberry.jpg');
+    background-image: url('/img/strawberry.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .chocolade {
-    background-image: url('img/chocolade.jpg');
+    background-image: url('/img/chocolade.jpg');
     background-repeat: no-repeat;
     
 }
@@ -116,7 +116,7 @@ nav {
 }
 
 .map {
-    background-image: url('img/map.jpg');
+    background-image: url('/img/map.jpg');
     background-repeat: no-repeat;
 }
 
