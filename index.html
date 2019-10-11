@@ -98,23 +98,25 @@
 
     <main>
       <h1 class="hide-text">Сливочное мороженое</h1>
-      <div>
-        <p>С 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
+      <div class="work-time-info">
+        <p class="work-time">С 10 до 20, ежедневно</p>
+        <p class="phone">8 812 450-25-25</p>
       </div>
 
       <section>
-        <section>
+        <div class="ice-cream-bg">
           <article>
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-            <button type="button">Давайте оба!</button>
+            <button class="btn" type="button">Давайте оба!</button>
           </article>
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>
-        </section>
+          <div class="ice-cream-btns">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+          </div>
+        </div>
 
-        <section class="offers">
+        <div class="offers">
           <!-- <h2 class="hide-text">Предложения</h2> -->
           <article class="raspberry">
             <h3>Малинка даром!</h3>
@@ -122,7 +124,7 @@
               При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
               банку малинового варенья бесплатно.
             </p>
-            <a class="btn-offer" href=" ">Хочу варенье!</a>
+            <a class="btn btn-offer" href=" ">Хочу варенье!</a>
           </article>
 
           <article class="chocolade">
@@ -131,9 +133,9 @@
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
               шоколадной присыпки совершенно бесплатно.
             </p>
-            <a class="btn-offer" href=" ">Хочу шоколадки!</a>
+            <a class="btn btn-offer" href=" ">Хочу шоколадки!</a>
           </article>
-        </section>
+        </div>
 
         <div>
           <h2 class="hide-text">Список мороженного</h2>
@@ -263,60 +265,76 @@
           </p>
           <form name="mail" method="post" action="URL">
             <input
+              class="send-email"
               type="email"
               size="40"
-              placeholder="Электронная почта"
+              placeholder="email@example.com"
               required
             />
-            <button type="submit">Отправить</button>
+            <button class="btn" type="submit">Отправить</button>
           </form>
         </div>
       </section>
 
       <!--Блок КАРТА-->
       <section class="map">
-        <div>
-          <h2>Контактная информация</h2>
-          <p>Адрес главного офисаи офлайн-магазина:</p>
-          <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-          <P>Для заказов по телефону:</P>
-          <span>8 812 450-25-25</span>
-          <span>(с 10 до 20 ежедневно)</span>
-          <button type="button">Форма обратной связи</button>
+        <div class="adress">
+          <h2 class="hide-text">Контактная информация</h2>
+          <p class="adress-info">
+            Адрес главного офиса <br />
+            и офлайн-магазина:
+          </p>
+          <p class="adress-contact">
+            ул. Большая Конюшенная <br />
+            19/8, Санкт-Петербург
+          </p>
+          <P class="adress-info">Для заказов по телефону:</P>
+          <p class="adress-contact">8 812 450-25-25</p>
+          <span class="adress-info">(с 10 до 20 ежедневно)</span>
+          <button class="btn" type="button">Форма обратной связи</button>
         </div>
+        <div class="ice-cream-pin"><img src="img/pin.svg" /></div>
       </section>
     </main>
 
     <!--Футер-->
     <footer>
-      <ul>
+      <ul class="social-links">
         <li>
-          <a href=" "><span>Твитер</span></a>
+          <a href=" "><img src="/img/twitter.svg"/></a>
         </li>
         <li>
-          <a href=" "><span>Инстаграм</span></a>
+          <a href=" "><img src="/img/instagram.svg"/></a>
         </li>
         <li>
-          <a href=" "><span>Фейсбук</span></a>
+          <a href=" "><img src="/img/fb.svg"/></a>
         </li>
         <li>
-          <a href=" "><span>Вконтакте</span></a>
+          <a href=" "><img src="/img/vk.svg"/></a>
         </li>
       </ul>
 
-      <ul>
-        <li><a href=" ">Для поставщиков</a></li>
+      <ul class="footer-links">
+        <li class="heart"><a href=" ">Для поставщиков</a></li>
         <li><a href=" ">О производстве</a></li>
         <li><a href=" ">Наши документы</a></li>
         <li><a href=" ">Экологические стандарты</a></li>
       </ul>
 
-      <div>
-        <img src="img/logo-htmlacademy-small.svg" alt="logo html academy" />
-        Сделано:
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
-          >HTML Academy</a
-        >
+      <div class="footer-academy">
+        <img
+          src="img/logo-htmlacademy.svg"
+          alt="logo html academy"
+          width="108"
+          height="39"
+        />
+        <div class="academy-link">
+          Сделано:&nbsp;
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+            >HTML Academy
+          </a>
+          &nbsp;© 2019
+        </div>
       </div>
     </footer>
 
