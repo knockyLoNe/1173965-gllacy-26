@@ -1,139 +1,326 @@
 body {
-margin: 0;
-padding: 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 
-font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
-font-size: 16px;
-color: white;
+  font-size: 16px;
+  color: white;
 
-background-color: #849d8f;
+  background-color: #849d8f;
+}
+
+.logo {
+  margin: 8px 26px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .site-navigation,
-.list-navigation {
-    list-style: none;
+.list-navigation,
+.list-products {
+  list-style: none;
 }
 
 .site-navigation a,
-.list-navigation a {
-    color: white;
+.list-products a {
+  color: white;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .list-navigation a:hover,
 .list-navigation a:focus {
-    color: black;
+  color: black;
 }
 
 .hide-text {
-    display: none;
+  display: none;
 }
 
-.waffle {
-    background-image: url('../img/waffel.jpg')
+.search-icon {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
 }
 
-.raspberry {
-    background-image: url('../img/raspberry.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.news {
-    background-image: url('../img/strawberry.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.chocolade {
-    background-image: url('../img/chocolade.jpg');
-    background-repeat: no-repeat;
-    
-}
+/* Предложения */
 
 .offers {
-    display: flex;
+  display: flex;
 }
 
 .offers article {
- margin: 0 13px;
- border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 13px;
+  padding: 20px;
+  border-radius: 16px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offers h3 {
+  font-size: 35px;
+  margin: 0;
+}
+
+.offers p {
+  font-size: 18px;
+  margin-bottom: 48px;
+}
+
+.raspberry {
+  background-image: url("../img/raspberry.jpg");
+}
+
+.chocolade {
+  background-image: url("../img/chocolade.jpg");
+}
+
+.btn-offer {
+  width: fit-content;
+  background-color: #f06643;
+  padding: 10px 22px;
+  border-radius: 22px;
+  color: white;
+  margin-left: auto;
+}
+
+/* Список мороженого */
+
+.list-products img {
+  border-radius: 50%;
+}
+
+.list-products li {
+  position: relative;
+  width: 270px;
+}
+
+.product-item {
+  position: relative;
+  text-align: center;
+}
+
+.product-item p {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  bottom: 10px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.product-item p span {
+  font-size: 35px;
+}
+
+.product-item h3 span {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+.product-hit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* Магазин Глейси */
+
+.waffle {
+  padding: 30px 22px;
+  background-image: url("../img/waffel.jpg");
+  border-radius: 22px;
+  background-size: cover;
+  color: #323232;
+}
+
+.waffle ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+/* calc */
+.waffle ul li {
+  position: relative;
+  width: calc(100% - 59px);
+  padding-left: 59px;
+}
+/* ::before */
+.ice-cream::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0;
+  background-image: url("../img/ice-cream.svg");
+  /* background-position: center;
+  background-size: 100%; */
+}
+
+.leather::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0;
+  background-image: url("../img/eco.svg");
+}
+
+.cow::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0;
+  background-image: url("../img/cow.svg");
+}
+
+.thermometer::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0;
+  background-image: url("../img/thermometer.svg");
+}
+
+/* Новости */
+
+.news {
+  width: 560px;
+  height: 220px;
+  margin-top: 40px;
+
+  background-image: url("../img/strawberry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 22px;
+
+  color: #323232;
+}
+
+.news h3 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 28px 20px;
+}
+
+.news-post {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 16px 20px;
+}
+
+.send-box {
+  width: 560px;
+  height: 220px;
+  margin-top: 40px;
+  margin-left: 22px;
+
+  background-color: #f8f7f4;
+  color: #5a5a5a;
+  border-radius: 22px;
+  border-image: url("../img/bg-post.svg") round;
+}
+
+.send-box p {
+  padding: 39px 28px;
+}
+
+/* Карта */
+
+.map {
+  width: 1200px;
+  height: 430px;
+  margin-top: 40px;
+  background-image: url("/img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
 }
 
 .site-navigation,
+.list-navigation,
+.list-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .list-navigation {
-    display: flex;
-    justify-content: space-between;
+  margin-left: auto;
 }
 
 .main-menu {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .catalog-sub-menu {
-    display: none;
+  display: none;
 }
 
 .login {
-    display: none;
+  display: none;
 }
 
 .basket {
-    display: none;
+  display: none;
 }
 
 .answer {
-    display: none;
+  display: none;
+}
+
+.search-input {
+  display: none;
 }
 
 .site-navigation > li {
-    margin-right: 30px;
-}
-
-.list-navigation img {
-    border-radius: 50%;
+  margin-right: 30px;
 }
 
 .news-send {
-    display: flex;
+  display: flex;
 }
 
 .news-send div {
-    width: 50%;
-}
-
-.map {
-    background-image: url('../img/map.jpg');
-    background-repeat: no-repeat;
+  width: 50%;
 }
 
 footer {
-    display: flex;
+  display: flex;
 }
 
 footer a {
-    color: white;
-    list-style: none;
+  color: white;
+  list-style: none;
 }
 
 .pagination > ul {
- display: flex;
- list-style: none;
+  display: flex;
+  list-style: none;
 }
-
-
 
 /* Css Включись */
