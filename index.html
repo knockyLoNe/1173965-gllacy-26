@@ -15,7 +15,7 @@
     <!--Шапка-->
     <header>
       <nav>
-        <a class="logo"
+        <a href="index.html" class="logo"
           ><img
             src="img/Logo.svg"
             width="154"
@@ -53,7 +53,11 @@
           </li>
 
           <li>
-            <button type="button">Вход</button>
+            <div class="enter-icon">
+              <img src="img/entrance.svg" />
+              <span type="enter-icon-btn">&nbsp;Вход</span>
+              <!--Можно ли спан?-->
+            </div>
 
             <!--Личный кабинет-->
             <div class="login">
@@ -89,7 +93,13 @@
             </div>
           </li>
 
-          <li><button type="button">Корзина</button></li>
+          <li>
+            <div class="basket-icon">
+              <img src="img/basket.svg" /><span type="basket-icon-btn"
+                >&nbsp;Пусто</span
+              >
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -110,9 +120,9 @@
             <button class="btn" type="button">Давайте оба!</button>
           </article>
           <div class="ice-cream-btns">
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
+            <button class="first-btn" type="button"></button>
+            <button type="button"></button>
+            <button type="button"></button>
           </div>
         </div>
 

@@ -31,9 +31,10 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.list-navigation a:hover,
-.list-navigation a:focus {
+.site-navigation a:focus {
+  background-color: #f7f6f3;
+  padding: 7px 15px;
+  border-radius: 20px;
   color: black;
 }
 
@@ -49,7 +50,70 @@ a {
   border-radius: 50%;
   display: flex;
   margin: auto;
+  margin-right: 10px;
+  cursor: pointer;
 }
+
+.enter-icon {
+  display: flex;
+  margin: auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.enter-icon-btn {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*  Доделать 
+.enter-icon :hover,
+.enter-icon :focus {
+  background-color: white;
+  fill: black;
+  color: black;
+  border-radius: 30px;
+  padding: 8px 16px;
+}
+*/
+
+.basket-icon {
+  display: flex;
+  margin: auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.catalog-sub-menu {
+  display: none;
+  background-color: #f8f7f4;
+  min-width: 146px;
+  list-style: none;
+}
+
+.catalog-sub-menu a {
+  color: #323232;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.site-navigation:hover .catalog-sub-menu {
+  display: block;
+}
+
+/*
+.login {
+
+}
+*/
 
 /* Главная */
 .work-time-info {
@@ -68,10 +132,11 @@ a {
 }
 
 .ice-cream-bg {
-  height: 570px;
-  background-image: url("../img/ice_cream.png");
+  height: 600px;
+  background-image: url("../img/ice_cream.png"),
+    url("../img/background-icecream-light.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center, top;
   text-align: center;
 }
 
@@ -94,6 +159,7 @@ a {
 .ice-cream-bg .btn {
   margin-bottom: 38px;
   font-size: 32px;
+  border: 0;
   border-radius: 35px;
   padding: 19px 40px;
 }
@@ -109,6 +175,19 @@ a {
   height: 22px;
   border-radius: 50%;
   margin-right: 4px;
+  border: 3px solid white;
+  background-color: Transparent;
+  cursor: pointer;
+}
+
+.ice-cream-btns :hover {
+  border: 3px solid white;
+  background-color: white;
+  opacity: 0.4;
+}
+
+.ice-cream-btns :focus {
+  background-color: white;
 }
 
 /* Предложения */
@@ -149,7 +228,7 @@ a {
 
 .btn {
   width: fit-content;
-  background-color: #f06643;
+  background: linear-gradient(0deg, #e84c36, #f26743);
   padding: 12px 20px;
   border-radius: 22px;
   color: white;
@@ -473,10 +552,6 @@ nav {
 .main-menu {
   display: flex;
   list-style: none;
-}
-
-.catalog-sub-menu {
-  display: none;
 }
 
 .login {
