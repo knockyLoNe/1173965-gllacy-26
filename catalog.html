@@ -10,88 +10,97 @@
   </head>
   <body>
 
-        <!--Шапка-->
-        <header>
-            <nav>
-              <a href="index.html"><img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop "></a>
-
-              <ul class="site-navigation">
-                <li>Каталог</li>
-                <li><a href=" ">Доставка и оплата</a></li>
-                <li><a href=" ">О компании</a></li>
-             </ul>
-
-
-              <ul class="list-navigation">
-                        <li> 
-                            <button><span>Открыть поиск</span></button>
-                            <form action="" method="get">
-
-                            <input name="s" placeholder="Что ищем?" type="search" required>
-                            
-                            </form>
-                        </li>
-        
-
-
-        <li><button type="button">Войти</button>
-                
-            <!--Личный кабинет-->
-                <div class="login">
-                  <h2>Личный кабинет</h2>
-                  
-                  <form  class="login-form" action="" method="post">
-                      <p class="login-user-login" >
-                        <label for="user-login">Электронная почта</label>
-                        <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
-                      </p>
-                      <p class="login-user-password">
-                        <label for="user-password">Пароль</label>
-                        <input id="user-password" type="password" name="password" placeholder="••••••••" required>
-                      </p>
-                      <button class="button" type="submit">Войти </button>
-                      <p>
-                          <a  href="#">Забыли пароль?</a>
-                          <a  href="#">Новая регистрация</a>
-                      </p>
-                  </form>
-                </div>
-                </li>
-                <li><button class="not-empty-basket" type="button">2 товара</button>
-                
-                    <form class="basket">
-                    <table>
-                            <tr>
-                                <td><button type="button"><span>Кнопка удаления товара</span></button></td>
-                                <td><a href=""><img src="img/1.jpg" width="33" height="33" alt="фото товара"></a></td>
-                                <td><a href="">Пломбир с апельсиновым джемом</a></td>
-                                <td>1,5 кг х <span>200 руб.</span></td>
-                                <td>300 руб.</td>
-                            </tr>
-
-                            <tr>
-                                <td><button type="button"><span>Кнопка удаления товара</span></button></td>
-                                <td><a href=""><img src="img/2.jpg" width="33" height="33" alt="фото товара"></a></td>
-                                <td><a href="">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                                <td>1,5 кг х <span>300 руб.</span></td>
-                                <td>400 руб.</td>
-                            </tr>
-
-                    </table>
-
-                            <span>Итого: 750 руб.</span>
-
-
-                            <button type="submit">Оформить заказ</button>
-                    
-                    </form>
-                
-                
-                </li>
-             </ul>
-
-            </nav>
-        </header>
+  <!--Шапка-->
+  <header>
+        <nav>
+          <a href="index.html" class="logo"
+            ><img
+              src="img/Logo.svg"
+              width="154"
+              height="64"
+              alt="Логотип магазина Gllacy Shop "
+          /></a>
+  
+          <ul class="site-navigation">
+            <li>
+              <a href="catalog.html">Каталог</a>
+              <ul class="catalog-sub-menu">
+                <li><a href=" ">Новинки</a></li>
+                <li><a href=" ">Сливочное</a></li>
+                <li><a href=" ">Щербеты</a></li>
+                <li><a href=" ">Фруктовый лед</a></li>
+                <li><a href=" ">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href=" ">Доставка и оплата</a></li>
+            <li><a href=" ">О компании</a></li>
+          </ul>
+  
+          <ul class="list-navigation">
+            <li>
+              <div class="search-icon"><img src="img/search.svg" /></div>
+              <form action="" method="get">
+                <input
+                  class="search-input"
+                  name="s"
+                  placeholder="Что ищем?"
+                  type="search"
+                  required
+                />
+              </form>
+            </li>
+  
+            <li>
+              <div class="enter-icon">
+                <img src="img/entrance.svg" />
+                <span type="enter-icon-btn">&nbsp;Вход</span>
+                <!--Можно ли спан?-->
+              </div>
+  
+              <!--Личный кабинет-->
+              <div class="login">
+                <h2>Личный кабинет</h2>
+  
+                <form class="login-form" action="" method="post">
+                  <p class="login-user-login">
+                    <label for="user-login">Электронная почта</label>
+                    <input
+                      id="user-login"
+                      type="email"
+                      name="login"
+                      placeholder="email@example.com"
+                      required
+                    />
+                  </p>
+                  <p class="login-user-password">
+                    <label for="user-password">Пароль</label>
+                    <input
+                      id="user-password"
+                      type="password"
+                      name="password"
+                      placeholder="••••••••"
+                      required
+                    />
+                  </p>
+                  <button class="button" type="submit">Войти</button>
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </form>
+              </div>
+            </li>
+  
+            <li>
+              <div class="basket-icon">
+                <img src="img/basket.svg" /><span type="basket-icon-btn"
+                  >&nbsp;Пусто</span
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
         <!--Главная-->
 
@@ -155,12 +164,12 @@
                     <section>
                             <h2 class="hide-text">Список мороженного</h2>
 
-                            <ul class="list-navigation">
+                            <ul class="list-products">
 
                                 <!---->
                                 <li> 
                                         <a href=" ">
-                                        <img src="img/1.jpg" width="165" height="165" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><span>310 ₽</span><span>/кг</span></a>
+                                        <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><span>310 ₽</span><span>/кг</span></a>
                                      
                                             <h3>
                                             <a href=" ">
@@ -171,7 +180,7 @@
                                  <!---->
                                  <li>
                                            <a href=" ">
-                                           <img src="img/2.jpg" width="165" height="165" alt="Сливочно-кофейное с кусочками шоколада"> <span>380 ₽</span><span>/кг</span></a>
+                                           <img src="img/2.jpg" width="267" height="267"  alt="Сливочно-кофейное с кусочками шоколада"> <span>380 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -182,7 +191,7 @@
                                 <!---->
                                 <li>
                                            <a href=" ">
-                                           <img src="img/3.jpg" width="165" height="165" alt="Сливочно-клубничное с присыпкой из белого шоколада"><span>355 ₽</span><span>/кг</span></a>
+                                           <img src="img/3.jpg" width="267" height="267"  alt="Сливочно-клубничное с присыпкой из белого шоколада"><span>355 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -195,7 +204,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/4.jpg" width="165" height="165" alt="Сливочное крем-брюле с карамельной подливкой"><span>415 ₽</span><span>/кг</span></a>
+                                           <img src="img/4.jpg" width="267" height="267"  alt="Сливочное крем-брюле с карамельной подливкой"><span>415 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -208,7 +217,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/2.1.jpg" width="165" height="165" alt="Сливочное с брусничным джемом"><span>325 ₽</span><span>/кг</span></a>
+                                           <img src="img/2.1.jpg" width="267" height="267"  alt="Сливочное с брусничным джемом"><span>325 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -221,7 +230,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/2.2.jpg" width="165" height="165" alt="Сливочно-черничное с цельными ягодами черники "><span>410 ₽</span><span>/кг</span></a>
+                                           <img src="img/2.2.jpg" width="267" height="267"  alt="Сливочно-черничное с цельными ягодами черники "><span>410 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -234,7 +243,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/2.3.jpg" width="165" height="165" alt="Сливочно-лимонное с карамельной присыпкой"><span>375 ₽</span><span>/кг</span></a>
+                                           <img src="img/2.3.jpg" width="267" height="267"  alt="Сливочно-лимонное с карамельной присыпкой"><span>375 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -247,7 +256,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/2.4.jpg" width="165" height="165" alt="Сливочное с шоколадной стружкой"><span>320 ₽</span><span>/кг</span></a>
+                                           <img src="img/2.4.jpg" width="267" height="267"  alt="Сливочное с шоколадной стружкой"><span>320 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -260,7 +269,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/3.1.jpg" width="165" height="165" alt="Сливочно-ванильное с кусочками шоколада"><span>440 ₽</span><span>/кг</span></a>
+                                           <img src="img/3.1.jpg" width="267" height="267"  alt="Сливочно-ванильное с кусочками шоколада"><span>440 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -273,7 +282,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/3.2.jpg" width="165" height="165" alt="Сливочноe с ментоловым сиропом"><span>435 ₽</span><span>/кг</span></a>
+                                           <img src="img/3.2.jpg" width="267" height="267"  alt="Сливочноe с ментоловым сиропом"><span>435 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -286,7 +295,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/3.3.jpg" width="165" height="165" alt="Сливочное с кусочками черного шоколада"><span>355 ₽</span><span>/кг</span></a>
+                                           <img src="img/3.3.jpg" width="267" height="267"  alt="Сливочное с кусочками черного шоколада"><span>355 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -299,7 +308,7 @@
                                      
                                         
                                            <a href=" ">
-                                           <img src="img/3.4.jpg" width="165" height="165" alt="Сливочное с мятным сиропом"><span>420 ₽</span><span>/кг</span></a>
+                                           <img src="img/3.4.jpg" width="267" height="267"  alt="Сливочное с мятным сиропом"><span>420 ₽</span><span>/кг</span></a>
                                         
                                                <h3>
                                                <a href=" ">
@@ -327,32 +336,45 @@
         </main>
 
                 <!--Футер-->
-                <footer>
-                        
-                        <ul>
-                           <li><a href=" "><span>Твитер</span></a></li>
-                           <li><a href=" "><span>Инстаграм</span></a></li>
-                           <li><a href=" "><span>Фейсбук</span></a></li>
-                           <li><a href=" "><span>Вконтакте</span></a></li>
-                        </ul>
-                        
-              
-                        
-                        <ul>
-                            <li><a href=" ">Для поставщиков</a></li>
-                            <li><a href=" ">О производстве</a></li>
-                            <li><a href=" ">Наши документы</a></li>
-                            <li><a href=" ">Экологические стандарты</a></li>
-                         </ul>
-                        
-              
-                     <div>   
-                            <img src="img/logo-htmlacademy-small.svg" alt="logo html academy">
-                            Сделано:
-                            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
-                     </div>
-                      </footer>
-              
+    <footer>
+            <ul class="social-links">
+              <li>
+                <a href=" "><img src="/img/twitter.svg"/></a>
+              </li>
+              <li>
+                <a href=" "><img src="/img/instagram.svg"/></a>
+              </li>
+              <li>
+                <a href=" "><img src="/img/fb.svg"/></a>
+              </li>
+              <li>
+                <a href=" "><img src="/img/vk.svg"/></a>
+              </li>
+            </ul>
+      
+            <ul class="footer-links">
+              <li class="heart"><a href=" ">Для поставщиков</a></li>
+              <li><a href=" ">О производстве</a></li>
+              <li><a href=" ">Наши документы</a></li>
+              <li><a href=" ">Экологические стандарты</a></li>
+            </ul>
+      
+            <div class="footer-academy">
+              <img
+                src="img/logo-htmlacademy.svg"
+                alt="logo html academy"
+                width="108"
+                height="39"
+              />
+              <div class="academy-link">
+                Сделано:&nbsp;
+                <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+                  >HTML Academy
+                </a>
+                &nbsp;© 2019
+              </div>
+            </div>
+          </footer>
               
 
 

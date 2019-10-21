@@ -93,6 +93,7 @@ a {
 
 .catalog-sub-menu {
   display: none;
+
   background-color: #f8f7f4;
   min-width: 146px;
   list-style: none;
@@ -132,11 +133,12 @@ a {
 }
 
 .ice-cream-bg {
-  height: 600px;
+  height: 580px;
   background-image: url("../img/ice_cream.png"),
     url("../img/background-icecream-light.png");
   background-repeat: no-repeat;
-  background-position: center, top;
+  background-position: center;
+  background-size: contain;
   text-align: center;
 }
 
@@ -541,6 +543,7 @@ nav {
 .list-navigation,
 .list-products {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -559,10 +562,6 @@ nav {
 }
 
 .basket {
-  display: none;
-}
-
-.answer {
   display: none;
 }
 
@@ -587,4 +586,13 @@ nav {
   list-style: none;
 }
 
-/* Css Включись */
+/* Всплывающая форма */
+
+.answer {
+  display: none;
+  width: 400px;
+  height: 370px;
+  background-color: #f8f7f4;
+  color: black;
+  font-weight: 400px;
+}
