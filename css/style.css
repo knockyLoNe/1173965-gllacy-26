@@ -9,6 +9,9 @@ body {
   color: white;
 
   background-color: #849d8f;
+  background-image: url("../img/background-icecream-light.png");
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .logo {
@@ -30,12 +33,11 @@ a {
   color: white;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #f7f6f3;
+.site-navigation a {
   padding: 7px 15px;
   border-radius: 20px;
-  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
 }
 
 .hide-text {
@@ -57,6 +59,7 @@ a {
 .enter-icon {
   display: flex;
   margin: auto;
+  align-items: center;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
@@ -65,9 +68,13 @@ a {
   cursor: pointer;
 }
 
-.enter-icon-btn {
+.enter-icon span {
   font-size: 14px;
   font-weight: 500;
+}
+
+.enter-icon img {
+  filter: invert(1);
 }
 
 /*  Доделать 
@@ -84,30 +91,65 @@ a {
 .basket-icon {
   display: flex;
   margin: auto;
-
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   padding: 8px 16px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
 }
 
 .catalog-sub-menu {
   display: none;
-
   background-color: #f8f7f4;
   min-width: 146px;
   list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  border-radius: 6px;
 }
 
 .catalog-sub-menu a {
   color: #323232;
-  padding: 10px;
+  font-size: 14px;
   text-decoration: none;
   display: block;
+  line-height: 20px;
 }
 
-.site-navigation:hover .catalog-sub-menu {
+.site-navigation li:hover ul {
   display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+.site-navigation > li:hover > a {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.site-navigation {
+  align-items: center;
+}
+
+.catalog-sub-menu li:hover {
+  background-color: #fbded7;
+}
+
+.catalog-sub-menu li:first-child:hover {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.catalog-sub-menu li:last-child:hover {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+hr {
+  margin: 0 auto;
+  width: calc(100% - 18px);
 }
 
 /*
@@ -117,8 +159,15 @@ a {
 */
 
 /* Главная */
+main {
+  position: relative;
+}
+
 .work-time-info {
+  position: absolute;
   text-align: right;
+  right: 0;
+  margin-top: -24px;
 }
 
 .work-time {
@@ -133,9 +182,9 @@ a {
 }
 
 .ice-cream-bg {
+  position: relative;
   height: 580px;
-  background-image: url("../img/ice_cream.png"),
-    url("../img/background-icecream-light.png");
+  background-image: url("../img/ice_cream.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -168,7 +217,7 @@ a {
 
 .ice-cream-btns {
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
   margin-left: 14px;
 }
 
@@ -183,9 +232,7 @@ a {
 }
 
 .ice-cream-btns :hover {
-  border: 3px solid white;
-  background-color: white;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .ice-cream-btns :focus {
@@ -545,7 +592,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .list-navigation {
@@ -569,10 +615,6 @@ nav {
   display: none;
 }
 
-.site-navigation > li {
-  margin-right: 30px;
-}
-
 .news-send {
   display: flex;
 }
@@ -581,8 +623,10 @@ nav {
   width: 50%;
 }
 
-.pagination > ul {
+.pagination ul {
   display: flex;
+  padding: 5px;
+  border-radius: 50%;
   list-style: none;
 }
 
