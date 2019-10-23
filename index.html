@@ -53,7 +53,7 @@
             </form>
           </li>
 
-          <li>
+          <li class>
             <div class="enter-icon">
               <img src="img/entrance.svg" />
               <span>&nbsp;Вход</span>
@@ -61,11 +61,13 @@
 
             <!--Личный кабинет-->
             <div class="login">
-              <h2>Личный кабинет</h2>
+              <h2 class="hide-text">Личный кабинет</h2>
 
               <form class="login-form" action="" method="post">
                 <p class="login-user-login">
-                  <label for="user-login">Электронная почта</label>
+                  <label class="hide-text" for="user-login"
+                    >Электронная почта</label
+                  >
                   <input
                     id="user-login"
                     type="email"
@@ -75,7 +77,7 @@
                   />
                 </p>
                 <p class="login-user-password">
-                  <label for="user-password">Пароль</label>
+                  <label class="hide-text" for="user-password">Пароль</label>
                   <input
                     id="user-password"
                     type="password"
@@ -84,7 +86,7 @@
                     required
                   />
                 </p>
-                <button class="button" type="submit">Войти</button>
+                <button class="btn" type="submit">Войти</button>
                 <p>
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
