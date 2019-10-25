@@ -333,6 +333,7 @@ main {
   background: linear-gradient(0deg, #e84c36, #f26743);
   padding: 12px 20px;
   border-radius: 22px;
+  border: 0;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -594,7 +595,7 @@ main {
 }
 
 .form_radio {
-  display: inline-flex;
+  display: flex;
 
   margin-left: 15px;
 }
@@ -641,6 +642,7 @@ main {
   border: 0 none;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 22px;
+  width: 702px;
 }
 
 .form-checkbox {
@@ -684,6 +686,40 @@ main {
 .form-checkbox input[type="checkbox"]:disabled + label:before {
   filter: grayscale(100%);
 }
+
+.button-3 {
+  width: 144px;
+  height: 36px;
+  border-radius: 22px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-3:hover {
+  width: 144px;
+  height: 36px;
+  border-radius: 22px;
+  background-color: #fbfcfb;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+.button-3:focus {
+  width: 144px;
+  height: 36px;
+  border-radius: 22px;
+  border: 0px;
+  background-color: #eaeaea;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 1px;
+}
+
 /* Footer */
 
 footer {
@@ -796,7 +832,7 @@ nav {
 }
 
 .modal-answer {
-  display: none;
+  display: block;
 
   position: fixed;
 
@@ -817,7 +853,7 @@ nav {
   font-size: 24px;
   font-weight: 400;
   margin-top: 20px;
-  margin-left: 24px;
+  margin-left: 38px;
 }
 
 .modal-close {
@@ -866,6 +902,7 @@ nav {
   font-size: 16px;
   width: 264px;
   margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .modal-answer textarea {
