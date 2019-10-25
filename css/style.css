@@ -595,7 +595,7 @@ main {
 }
 
 .form_radio {
-  display: flex;
+  display: inline-flex;
 
   margin-left: 15px;
 }
