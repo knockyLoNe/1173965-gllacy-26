@@ -570,6 +570,120 @@ main {
   color: white;
 }
 
+.pagination ul {
+  display: flex;
+  padding: 5px;
+  border-radius: 50%;
+  list-style: none;
+  text-align: right;
+}
+
+/* Radio Button */
+.fat {
+  font-size: 14px;
+  margin-left: 15px;
+  margin-bottom: 7px;
+}
+
+.radio-button {
+  border: 0 none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+
+  width: 416px;
+}
+
+.form_radio {
+  display: inline-flex;
+
+  margin-left: 15px;
+}
+.form_radio input[type="radio"] {
+  display: none;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: -10px;
+  bottom: -5px;
+  background: url(../img/radio-off.svg) 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type="radio"]:checked + label:before {
+  background: url(../img/radio-on.svg) 0 0 no-repeat;
+}
+
+/* Hover */
+.form_radio label:hover:before {
+  filter: brightness(120%);
+}
+
+/* Disabled */
+.form_radio input[type="radio"]:disabled + label:before {
+  filter: grayscale(100%);
+}
+
+/* Checkbox Button */
+.checkbox-button {
+  border: 0 none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+}
+
+.form-checkbox {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.form-checkbox input[type="checkbox"] {
+  display: none;
+}
+.form-checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form-checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: -10px;
+  bottom: -5px;
+  background: url(../img/checkbox-off.svg) 0 0 no-repeat;
+}
+
+/* Checked */
+.form-checkbox input[type="checkbox"]:checked + label:before {
+  background: url(../img/checkbox-on.svg) 0 0 no-repeat;
+}
+
+/* Hover */
+.form-checkbox label:hover:before {
+  filter: brightness(120%);
+}
+
+/* Disabled */
+.form-checkbox input[type="checkbox"]:disabled + label:before {
+  filter: grayscale(100%);
+}
 /* Footer */
 
 footer {
@@ -671,17 +785,14 @@ nav {
   width: 50%;
 }
 
-.pagination ul {
-  display: flex;
-  padding: 5px;
-  border-radius: 50%;
-  list-style: none;
-}
-
 /* Всплывающая форма */
 
 .modal {
-  display: block;
+  display: none;
+}
+
+.modal-answer fieldset {
+  border: 0 none;
 }
 
 .modal-answer {

@@ -135,16 +135,42 @@
                         </fieldset>
                      </form>
 
+                     <!--
                      <form>
                         <fieldset>
-                        <legend>Жирность:</legend>
+                            <legend>Жирность:</legend>
                         <label><input name="fat"  type="radio" value="0%"><span>0%</span></label>
                         <label><input name="fat"  type="radio" value="до 10%" checked><span>до 10%</span></label>
                         <label><input name="fat"  type="radio" value="до 30%"><span>до 30%</span></label>
                         <label><input name="fat"  type="radio" value="вышe 30%"><span>выше 30%</span></label>
                         </fieldset>
-                     </form>
+                     </form> -->
 
+                    
+                    <legend class="fat">Жирность:</legend>
+                    <fieldset class="radio-button">
+                     <div class="form_radio">
+                        <input id="radio-1" type="radio" name="radio" value="0%">
+                        <label for="radio-1">0%</label>
+                      </div>
+                       
+                      <div class="form_radio">
+                        <input id="radio-2" type="radio" name="radio" value="до 10%" checked>
+                        <label for="radio-2">до 10%</label>
+                      </div>
+                       
+                      <div class="form_radio">
+                        <input id="radio-3" type="radio" name="radio" value="до 30%">
+                        <label for="radio-3">до 30%</label>
+                      </div>
+                       
+                      <div class="form_radio">
+                        <input id="radio-4" type="radio" name="radio" value="выше 30%" >
+                        <label for="radio-4">выше 30%</label>
+                      </div>
+                    </fieldset>
+
+                    <!--
                      <form>
                         <fieldset> 
                         <legend>Наполнители:</legend>
@@ -154,7 +180,35 @@
                         <label><input type="checkbox"  name="option" value="Сиропы"><span>Сиропы</span></label>
                         <label><input type="checkbox"  name="option" value="Джемы"><span>Джемы</span></label>
                         </fieldset>
-                     </form>
+                     </form> -->
+
+                     <legend class="fat">Наполнители:</legend>
+                     <fieldset class="checkbox-button">
+                      <div class="form-checkbox">
+                         <input id="checkbox-1" type="checkbox" name="checkbox" value="Шоколадные" checked>
+                         <label for="checkbox-1">шоколадные</label>
+                       </div>
+                        
+                       <div class="form-checkbox">
+                         <input id="checkbox-2" type="checkbox" name="checkbox" value="Сахарные присыпки" checked>
+                         <label for="checkbox-2">сахарные присыпки</label>
+                       </div>
+                        
+                       <div class="form-checkbox">
+                         <input id="checkbox-3" type="checkbox" name="checkbox" value="Фрукты">
+                         <label for="checkbox-3">фрукты</label>
+                       </div>
+                        
+                       <div class="form-checkbox">
+                         <input id="checkbox-4" type="checkbox" name="checkbox" value="Сиропы" >
+                         <label for="checkbox-4">сиропы</label>
+                       </div>
+
+                       <div class="form-checkbox">
+                          <input id="checkbox-5" type="checkbox" name="checkbox" value="Джемы" >
+                          <label for="checkbox-5">джемы</label>
+                        </div>
+                     </fieldset>
 
                      <button type="submit">Применить</button>
 
