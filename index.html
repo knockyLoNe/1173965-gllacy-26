@@ -53,12 +53,11 @@
             </form>
           </li>
 
-          <li class>
+          <li class="entrance">
             <div class="enter-icon">
               <img src="img/entrance.svg" />
               <span>&nbsp;Вход</span>
             </div>
-
             <!--Личный кабинет-->
             <div class="login">
               <h2 class="hide-text">Личный кабинет</h2>
@@ -350,26 +349,45 @@
 
     <!-- Центральная выпадающая кнопка !!! -->
 
-    <div class="answer">
+    <div class="modal modal-answer">
       <h2>Мы обязательно вам ответим!</h2>
       <form action="" method="post">
+        <button class="modal-close" type="button">
+          <span class="hide-text">Закрыть</span>
+        </button>
         <fieldset>
-          <legend>Рассылка</legend>
+          <legend class="hide-text">Рассылка</legend>
+          <label><input type="text" placeholder="Имя Фамилия" required/></label>
           <label
-            ><input type="text" placeholder="Как вас зовут?" required
+            ><input type="email" placeholder="email@example.com" required
           /></label>
           <label
-            ><input type="email" placeholder="Ваша почта для ответа?" required
-          /></label>
-          <label
-            ><textarea name="comment" cols="40" rows="3">
-Напишите что-нибудь...</textarea
+            ><textarea type="comment" name="comment" cols="40" rows="3">
+В свободной форме</textarea
             ></label
           >
 
-          <button class="button" type="submit">Отправить</button>
+          <button class="btn" type="submit">Отправить</button>
         </fieldset>
       </form>
     </div>
+
+    <!--
+    <script>
+      var link = document.querySelector(".ice-cream-bg .btn");
+      var popup = document.querySelector(".modal-answer");
+      var close = document.querySelector(".modal-close");
+
+      link.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-answer");
+      });
+
+      close.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-answer");
+      });
+    </script>
+    -->
   </body>
 </html>
