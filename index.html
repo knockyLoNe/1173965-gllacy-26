@@ -362,17 +362,22 @@
             ><input type="email" placeholder="email@example.com" required
           /></label>
           <label
-            ><textarea type="comment" name="comment" cols="40" rows="3">
-В свободной форме</textarea
-            ></label
-          >
+            ><textarea
+              type="comment"
+              name="comment"
+              cols="40"
+              rows="3"
+              placeholder="В свободной форме"
+            ></textarea
+          ></label>
 
           <button class="btn" type="submit">Отправить</button>
         </fieldset>
       </form>
+
+      <div class="overlay"></div>
     </div>
 
-    <!--
     <script>
       var link = document.querySelector(".ice-cream-bg .btn");
       var popup = document.querySelector(".modal-answer");
@@ -388,6 +393,5 @@
         popup.classList.remove("modal-answer");
       });
     </script>
-    -->
   </body>
 </html>
