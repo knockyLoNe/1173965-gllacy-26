@@ -55,11 +55,11 @@
                 />
               </svg>
             </div>
-            <form action="" method="get">
+            <form class="search-form" action="" method="get">
               <input
                 class="search-input"
                 name="s"
-                placeholder="Что ищем?"
+                placeholder="Крем-брюле"
                 type="search"
                 required
               />
@@ -68,7 +68,20 @@
 
           <li class="entrance">
             <div class="enter-icon">
-              <img src="img/entrance.svg" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="21"
+                height="19"
+                viewBox="0 0 21 19"
+              >
+                <g fill="#000">
+                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                  <path
+                    d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"
+                  />
+                </g>
+              </svg>
               <span>&nbsp;Вход</span>
             </div>
             <!--Личный кабинет-->
@@ -98,18 +111,34 @@
                     required
                   />
                 </p>
-                <button class="btn" type="submit">Войти</button>
-                <p>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </p>
+                <div class="sign-buttons">
+                  <button class="btn" type="submit">Войти</button>
+                  <div class="sign-up">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
               </form>
             </div>
           </li>
 
           <li>
             <div class="basket-icon">
-              <img src="img/basket.svg" /><span>&nbsp;Пусто</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+              >
+                <g fill="#FFF">
+                  <path
+                    d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
+                  />
+                  <circle cx="6.984" cy="18" r="2" />
+                  <circle cx="15.984" cy="18" r="2" />
+                </g>
+              </svg>
+              <span>&nbsp;Пусто</span>
             </div>
           </li>
         </ul>
@@ -360,9 +389,9 @@
       </div>
     </footer>
 
-    <!-- Центральная выпадающая кнопка !!! -->
+    <!-- Центральная всплывающая кнопка !!! -->
 
-    <div class="modal modal-answer">
+    <div class="modal-answer">
       <h2>Мы обязательно вам ответим!</h2>
       <form action="" method="post">
         <button class="modal-close" type="button">
@@ -387,13 +416,13 @@
           <button class="btn" type="submit">Отправить</button>
         </fieldset>
       </form>
-
-      <div class="overlay"></div>
     </div>
+
+    <div class="overlay"></div>
 
     <script>
       var link = document.querySelector(".ice-cream-bg .btn");
-      var popup = document.querySelector(".modal");
+      var popup = document.querySelector(".modal-answer");
       var close = document.querySelector(".modal-close");
 
       link.addEventListener("click", function(evt) {
@@ -403,7 +432,7 @@
 
       close.addEventListener("click", function(evt) {
         evt.preventDefault();
-        popup.classList.remove("modal-answer");
+        popup.classList.remove("modal");
       });
     </script>
   </body>
