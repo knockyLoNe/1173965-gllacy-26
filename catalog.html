@@ -164,15 +164,18 @@
 
                   <section>
 
-                     <div>
+                     <div class="select">
                         <p>Сортировка:</p>
-                        <select class="sorting">
-                           <option>По популярности</option>
+                        <select>
+                           <option value="по популярности">по популярности</option>
+                           <option value="сначала недорогие">сначала недорогие</option>
+                           <option value="сначала дорогие">сначала дорогие</option>
+                           <option value="по жирности">по жирности</option>
                         </select>
                      </div>
 
                      <form>
-                        <fieldset>
+                        <fieldset class="range">
                         <label for="price">Цена: 100 руб. – 500 руб.</label>
                         <div><input type="range" name="price" id="price" min="0" max="10"></div>
                         </fieldset>
