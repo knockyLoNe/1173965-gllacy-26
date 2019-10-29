@@ -157,13 +157,13 @@
       <section>
         <div class="ice-cream-bg">
           <article>
-            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+            <h3 class="text-bg">Крем-брюле и пломбир с малиновым джемом</h3>
             <button class="btn" type="button">Давайте оба!</button>
           </article>
           <div class="ice-cream-btns">
             <button class="first-btn" type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
+            <button class="second-btn" type="button"></button>
+            <button class="third-btn" type="button"></button>
           </div>
         </div>
 
@@ -194,55 +194,65 @@
           <ul class="list-products">
             <!---->
             <li>
-              <div class="product-hit"><img src="img/hit.svg" /></div>
-              <a class="product-item" href=" ">
-                <img
-                  src="img/1.jpg"
-                  width="267"
-                  height="267"
-                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
-                />
-                <p>310 ₽<span>/кг</span></p>
-                <h3>
-                  <span
-                    >Сливочное с апельсиновым джемом и цитрусовой стружкой</span
-                  >
-                </h3>
-              </a>
+              <div class="product">
+                <div class="product-hit"><img src="img/hit.svg" /></div>
+                <a class="product-item" href=" ">
+                  <img
+                    src="img/1.jpg"
+                    width="267"
+                    height="267"
+                    alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
+                  />
+                  <p>310 ₽<span>/кг</span></p>
+                  <h3>
+                    <span
+                      >Сливочное с апельсиновым джемом и цитрусовой
+                      стружкой</span
+                    >
+                  </h3>
+                </a>
+                <a href="" class="btn btn-fastview">Быстрый просмотр</a>
+              </div>
             </li>
             <!---->
             <li>
-              <div class="product-hit"><img src="img/hit.svg" /></div>
-              <a class="product-item" href=" ">
-                <img
-                  src="img/2.jpg"
-                  width="267"
-                  height="267"
-                  alt="Сливочно-кофейное с кусочками шоколада"
-                />
-                <p>380 ₽<span>/кг</span></p>
+              <div class="product">
+                <div class="product-hit"><img src="img/hit.svg" /></div>
+                <a class="product-item" href=" ">
+                  <img
+                    src="img/2.jpg"
+                    width="267"
+                    height="267"
+                    alt="Сливочно-кофейное с кусочками шоколада"
+                  />
+                  <p>380 ₽<span>/кг</span></p>
 
-                <h3><span>Сливочно-кофейное с кусочками шоколада</span></h3>
-              </a>
+                  <h3>
+                    <span>Сливочно-кофейное с кусочками шоколада</span>
+                  </h3> </a
+                ><a href="" class="btn btn-fastview">Быстрый просмотр</a>
+              </div>
             </li>
             <!---->
             <li>
-              <div class="product-hit"><img src="img/hit.svg" /></div>
-              <a class="product-item" href=" ">
-                <img
-                  src="img/3.jpg"
-                  width="267"
-                  height="267"
-                  alt="Сливочно-клубничное с присыпкой из белого шоколада"
-                />
-                <p>355 ₽<span>/кг</span></p>
+              <div class="product">
+                <div class="product-hit"><img src="img/hit.svg" /></div>
+                <a class="product-item" href=" ">
+                  <img
+                    src="img/3.jpg"
+                    width="267"
+                    height="267"
+                    alt="Сливочно-клубничное с присыпкой из белого шоколада"
+                  />
+                  <p>355 ₽<span>/кг</span></p>
 
-                <h3>
-                  <span
-                    >Сливочно-клубничное с присыпкой из белого шоколада</span
-                  >
-                </h3>
-              </a>
+                  <h3>
+                    <span
+                      >Сливочно-клубничное с присыпкой из белого шоколада</span
+                    >
+                  </h3> </a
+                ><a href="" class="btn btn-fastview">Быстрый просмотр</a>
+              </div>
             </li>
             <!---->
             <li>
@@ -258,8 +268,8 @@
 
                 <h3>
                   <span>Сливочное крем-брюле с карамельной подливкой</span>
-                </h3>
-              </a>
+                </h3> </a
+              ><a href="" class="btn btn-fastview">Быстрый просмотр</a>
             </li>
             <!---->
           </ul>
@@ -425,6 +435,16 @@
       var popup = document.querySelector(".modal-answer");
       var close = document.querySelector(".modal-close");
 
+      var firstBtn = document.querySelector(".first-btn");
+      var secondBtn = document.querySelector(".second-btn");
+      var thirdBtn = document.querySelector(".third-btn");
+      var body = document.querySelector("body");
+
+      var iceCream = document.querySelector(".ice-cream-bg");
+      var lightBg = document.querySelector("body");
+
+      var textBg = document.querySelector(".text-bg");
+
       link.addEventListener("click", function(evt) {
         evt.preventDefault();
         popup.classList.add("modal");
@@ -433,6 +453,30 @@
       close.addEventListener("click", function(evt) {
         evt.preventDefault();
         popup.classList.remove("modal");
+      });
+
+      firstBtn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        body.style.backgroundColor = "#849d8f";
+        iceCream.style.backgroundImage = "url('../img/ice_cream.png')";
+        lightBg.style.backgroundImage =
+          "url('../img/background-icecream-light.png')";
+      });
+
+      secondBtn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        body.style.backgroundColor = "#8996a6";
+        iceCream.style.backgroundImage = "url('../img/screen2.png')";
+        lightBg.style.backgroundImage = "url('../img/screen2-light.png')";
+        textBg.text.innerHTML = "Шоколадный пломбир и лимонный сорбет";
+      });
+
+      thirdBtn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        body.style.backgroundColor = "#9d8b84";
+        iceCream.style.backgroundImage = "url('../img/screen3.png')";
+        lightBg.style.backgroundImage = "url('../img/screen3-light.png')";
+        textBg.text.innerHTML = "Пломбир с помадкой и клубничный щербет";
       });
     </script>
   </body>

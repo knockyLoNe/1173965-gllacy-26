@@ -7,7 +7,6 @@ body {
 
   font-size: 16px;
   color: white;
-
   background-color: #849d8f;
   background-image: url("../img/background-icecream-light.png");
   background-position: top;
@@ -337,6 +336,15 @@ main {
   background-color: white;
 }
 
+.first-bg-color {
+  background-color: #849d8f;
+}
+.second-bg-color {
+  background-color: #8996a6;
+}
+.third-bg-color {
+  background-color: #9d8b84;
+}
 /* Предложения */
 
 .offers {
@@ -346,6 +354,7 @@ main {
 .offers article {
   display: flex;
   flex-direction: column;
+  width: 50%;
 
   margin: 0 13px;
   padding: 20px;
@@ -428,8 +437,8 @@ main {
 
 .product-hit {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 15;
+  top: 15;
   z-index: 1;
 }
 
@@ -616,12 +625,16 @@ main {
   color: white;
 }
 
+.pagination {
+  display: flex;
+}
+
 .pagination ul {
   display: flex;
   padding: 5px;
   border-radius: 50%;
   list-style: none;
-  text-align: right;
+  margin-left: auto;
 }
 
 main h2 {
@@ -923,14 +936,38 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+}
+
+.list-products li {
+  position: relative;
+}
+
+.product {
+  position: absolute;
+  padding: 15px;
+}
+
+.list-products li:hover .product {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.list-products li:hover .btn-fastview {
+  display: flex;
 }
 
 .list-navigation {
   margin-left: auto;
 }
 
-.basket {
+.btn-fastview {
   display: none;
+  margin: auto;
+}
+
+.basket {
+  display: block;
 }
 
 .news-send {
