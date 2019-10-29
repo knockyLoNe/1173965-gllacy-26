@@ -629,6 +629,22 @@ main {
   display: flex;
 }
 
+.pagination a {
+  list-style: none;
+  color: white;
+}
+
+.pagination a:hover {
+  padding: 7px 13px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.pagination li {
+  margin-right: 22px;
+}
+
 .pagination ul {
   display: flex;
   padding: 5px;
