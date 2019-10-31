@@ -4,11 +4,10 @@ body {
   padding: 0;
 
   font-family: "Roboto", sans-serif;
-
   font-size: 16px;
   color: white;
   background-color: #849d8f;
-  background-image: url("../img/background-icecream-light.png");
+
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -237,7 +236,7 @@ a {
   color: white;
 }
 
-.site-navigation > .active-catalog {
+.site-navigation .active-catalog {
   text-decoration: none;
 }
 
@@ -275,7 +274,7 @@ main {
   position: absolute;
   text-align: right;
   right: 0;
-  margin-top: -24px;
+  margin-top: -14px;
 }
 
 .work-time {
@@ -680,6 +679,10 @@ main h2 {
   text-decoration-color: rgba(255, 255, 255, 0.4);
 }
 
+.main-menu li:last-child a {
+  text-decoration: none;
+}
+
 /* Select */
 
 .select {
@@ -728,14 +731,17 @@ main h2 {
   color: black;
 }
 
+.section-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Range */
 
 input[type="range"] {
   -webkit-appearance: none;
   width: 176px;
   height: 3px;
-
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -754,23 +760,22 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
-  margin-top: -1px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+  margin-top: -1px;
 }
 
 .range {
   border: 0 none;
 }
 
-.range input {
-  margin: 21px;
-
+.slider {
+  display: flex;
+  justify-content: center;
   width: 218px;
-
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 16px;
   padding-bottom: 16px;
-
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 22px;
 }
 
@@ -1044,6 +1049,7 @@ nav {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
+  z-index: 10;
 }
 
 .list-products li:hover .btn-fastview {
@@ -1146,7 +1152,7 @@ body .modal {
 .modal-answer input[type="text"],
 .modal-answer input[type="email"] {
   padding: 13px 13px;
-  color: rgba(255, 255, 255, 0.4);
+
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   font-size: 16px;
@@ -1160,7 +1166,7 @@ body .modal {
   height: 154px;
   margin-left: 24px;
   margin-right: 24px;
-  color: rgba(255, 255, 255, 0.4);
+
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   resize: none;
