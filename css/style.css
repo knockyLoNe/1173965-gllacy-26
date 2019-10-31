@@ -232,6 +232,15 @@ a {
   color: #323232;
 }
 
+.active-catalog {
+  background-color: #d07058;
+  color: white;
+}
+
+.site-navigation > .active-catalog {
+  text-decoration: none;
+}
+
 .site-navigation {
   align-items: center;
 }
@@ -250,7 +259,9 @@ a {
   border-bottom-right-radius: 8px;
 }
 
-hr {
+.line-menu {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: calc(100% - 18px);
 }
@@ -627,22 +638,7 @@ main {
 
 .pagination {
   display: flex;
-}
-
-.pagination a {
-  list-style: none;
-  color: white;
-}
-
-.pagination a:hover {
-  padding: 7px 13px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-}
-
-.pagination li {
-  margin-right: 22px;
+  margin-bottom: 30px;
 }
 
 .pagination ul {
@@ -651,6 +647,24 @@ main {
   border-radius: 50%;
   list-style: none;
   margin-left: auto;
+}
+
+.pagination a {
+  list-style: none;
+  color: white;
+  padding: 6px 11px;
+  border-radius: 50%;
+}
+
+.pagination a.active {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
 }
 
 main h2 {
@@ -707,6 +721,7 @@ main h2 {
 
   -webkit-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .select select:hover {
@@ -715,18 +730,57 @@ main h2 {
 
 /* Range */
 
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 176px;
+  height: 3px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -1px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+}
+
 .range {
   border: 0 none;
 }
 
+.range input {
+  margin: 21px;
+
+  width: 218px;
+
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border-radius: 22px;
+}
+
 .range label {
   font-size: 14px;
-
   margin-bottom: 7px;
 }
 
 /* Radio Button */
-.fat {
+legend {
   font-size: 14px;
   margin-left: 15px;
   margin-bottom: 7px;
@@ -869,6 +923,14 @@ main h2 {
   box-shadow: inset 1px 1px 1px;
 }
 
+.line {
+  width: 1146px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Footer */
 
 footer {
@@ -901,6 +963,13 @@ footer ul {
   margin-right: 10px;
 }
 
+.social-links img:hover {
+  opacity: 1;
+  border: 3px solid #c2cec7;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .footer-links {
   display: grid;
   grid-template-columns: auto auto;
@@ -910,6 +979,11 @@ footer ul {
   margin-top: 20px;
   font-size: 13px;
   text-decoration: underline;
+}
+
+.footer-links > li:hover a,
+.academy-link > a:hover {
+  color: #ffbc9e;
 }
 
 .footer-academy {
@@ -960,11 +1034,14 @@ nav {
 }
 
 .product {
-  position: absolute;
+  position: relative;
+  width: 100%;
   padding: 15px;
+  z-index: 9;
 }
 
 .list-products li:hover .product {
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
 }
@@ -1019,7 +1096,7 @@ body .modal {
   left: 50%;
   padding: 0;
   margin-left: -239px;
-  z-index: 4;
+  z-index: 9;
 }
 
 .modal-answer h2 {
