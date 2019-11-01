@@ -510,6 +510,13 @@ main {
   width: calc(100% - 59px);
   padding-left: 59px;
 }
+
+.waffle h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 /* ::before */
 .ice-cream::before {
   content: "";
