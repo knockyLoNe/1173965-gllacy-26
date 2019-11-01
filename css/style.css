@@ -1232,6 +1232,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   z-index: 10;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .list-products li:hover .btn-fastview {
