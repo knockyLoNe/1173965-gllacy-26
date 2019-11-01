@@ -169,7 +169,11 @@
             <button class="btn" type="button">Давайте оба!</button>
           </article>
           <div class="ice-cream-btns">
-            <button class="first-btn" type="button"></button>
+            <button
+              class="first-btn"
+              type="button"
+              style="background-color: #fff"
+            ></button>
             <button class="second-btn" type="button"></button>
             <button class="third-btn" type="button"></button>
           </div>
@@ -480,6 +484,7 @@
         iceCream.style.backgroundImage = "url('img/screen2.png')";
         lightBg.style.backgroundImage = "url('img/screen2-light.png')";
         textBg.innerHTML = "Шоколадный пломбир и лимонный сорбет";
+        firstBtn.style.backgroundColor = null;
       });
 
       thirdBtn.addEventListener("click", function(evt) {
@@ -488,6 +493,7 @@
         iceCream.style.backgroundImage = "url('img/screen3.png')";
         lightBg.style.backgroundImage = "url('img/screen3-light.png')";
         textBg.innerHTML = "Пломбир с помадкой и клубничный щербет";
+        firstBtn.style.backgroundColor = null;
       });
     </script>
   </body>

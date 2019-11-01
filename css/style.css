@@ -670,7 +670,7 @@ main {
   display: none;
 
   position: absolute;
-  width: 510px;
+  width: 540px;
   background-color: #f8f7f4;
   font-size: 13px;
   color: black;
@@ -678,7 +678,7 @@ main {
   border-radius: 8px;
   margin-top: 3px;
 
-  left: -400px;
+  left: -428px;
   z-index: 3;
 }
 
@@ -704,17 +704,11 @@ main {
 }
 
 .button-x {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-
-  background-color: red;
+  background-color: transparent;
   border: 0;
-
   cursor: pointer;
 
-  top: 100px;
-  right: 800px;
+  margin-bottom: 12px;
 }
 
 .button-x:after,
@@ -741,6 +735,52 @@ main {
   background-color: #cacac7;
   height: 1px;
   width: 100%;
+}
+
+.not-empty-basket table {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.table-image {
+  padding-left: 15px;
+}
+
+.table-title {
+  width: 218px;
+  padding: 15px 0 15px 15px;
+}
+
+.table-price {
+  width: 100px;
+  padding-left: 30px;
+}
+
+.table-price span {
+  color: #999999;
+}
+
+.table-summ {
+  width: 52px;
+  padding-left: 30px;
+}
+
+.confirm-order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 14px;
+}
+
+.confirm-order span {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.confirm-order .btn {
+  margin-bottom: 18px;
 }
 
 .pagination {
@@ -854,43 +894,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]:focus {
   outline: none;
 }
-/*
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
 
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -1px;
-}
-
-
-.range {
-  border: 0 none;
-  padding-top: 0;
-}
-
-.slider {
-  display: flex;
-  justify-content: center;
-  width: 218px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 22px;
-  margin-top: 3px;
-}
-
-.range label {
-  font-size: 14px;
-  margin-bottom: 7px;
-}
-
-*/
 .range {
   border: 0 none;
   padding-top: 0;
