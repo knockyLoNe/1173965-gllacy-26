@@ -15,13 +15,14 @@
     <!--Шапка-->
     <header>
       <nav>
-        <a href="index.html" class="logo"
-          ><img
+        <div class="logo">
+          <img
             src="img/Logo.svg"
             width="154"
             height="64"
             alt="Логотип магазина Gllacy Shop "
-        /></a>
+          />
+        </div>
 
         <ul class="site-navigation">
           <li>
@@ -29,7 +30,7 @@
             <ul class="catalog-sub-menu">
               <li><a href=" ">Новинки</a></li>
               <li><div class="line-menu"></div></li>
-              <li><a href=" ">Сливочное</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
               <li><a href=" ">Щербеты</a></li>
               <li><a href=" ">Фруктовый лед</a></li>
               <li><a href=" ">Мелорин</a></li>
@@ -159,21 +160,18 @@
       <h1 class="hide-text">Сливочное мороженое</h1>
       <div class="work-time-info">
         <p class="work-time">С 10 до 20, ежедневно</p>
-        <p class="phone">8 812 450-25-25</p>
+
+        <a class="phone" href="tel:+7 812 450-25-25">8 812 450-25-25</a>
       </div>
 
       <section>
         <div class="ice-cream-bg">
           <article>
             <h3 class="text-bg">Крем-брюле и пломбир с малиновым джемом</h3>
-            <button class="btn" type="button">Давайте оба!</button>
+            <a href="" class="btn">Давайте оба!</a>
           </article>
           <div class="ice-cream-btns">
-            <button
-              class="first-btn"
-              type="button"
-              style="background-color: #fff"
-            ></button>
+            <button class="first-btn active" type="button"></button>
             <button class="second-btn" type="button"></button>
             <button class="third-btn" type="button"></button>
           </div>
@@ -219,10 +217,7 @@
                   />
                   <p>310 ₽<span>/кг</span></p>
                   <h3>
-                    <span
-                      >Сливочное с апельсиновым джемом и цитрусовой
-                      стружкой</span
-                    >
+                    Сливочное с апельсиновым джемом и цитрусовой стружкой
                   </h3>
                 </a>
                 <a href="" class="btn btn-fastview">Быстрый просмотр</a>
@@ -244,7 +239,7 @@
                   <p>380 ₽<span>/кг</span></p>
 
                   <h3>
-                    <span>Сливочно-кофейное с кусочками шоколада</span>
+                    Сливочно-кофейное с кусочками шоколада
                   </h3> </a
                 ><a href="" class="btn btn-fastview">Быстрый просмотр</a>
               </div>
@@ -265,9 +260,7 @@
                   <p>355 ₽<span>/кг</span></p>
 
                   <h3>
-                    <span
-                      >Сливочно-клубничное с присыпкой из белого шоколада</span
-                    >
+                    Сливочно-клубничное с присыпкой из белого шоколада
                   </h3> </a
                 ><a href="" class="btn btn-fastview">Быстрый просмотр</a>
               </div>
@@ -288,7 +281,7 @@
                   <p>415 ₽<span>/кг</span></p>
 
                   <h3>
-                    <span>Сливочное крем-брюле с карамельной подливкой</span>
+                    Сливочное крем-брюле с карамельной подливкой
                   </h3> </a
                 ><a href="" class="btn btn-fastview">Быстрый просмотр</a>
               </div>
@@ -374,7 +367,7 @@
           <P class="adress-info">Для заказов по телефону:</P>
           <p class="adress-contact">8 812 450-25-25</p>
           <span class="adress-info">(с 10 до 20 ежедневно)</span>
-          <button class="btn" type="button">Форма обратной связи</button>
+          <a href="" class="btn">Форма обратной связи</a>
         </div>
         <div class="ice-cream-pin">
           <img src="img/pin.svg" width="80" height="140" alt="pin" />
@@ -415,12 +408,13 @@
       </ul>
 
       <div class="footer-academy">
-        <img
-          src="img/logo-htmlacademy.svg"
-          alt="logo html academy"
-          width="108"
-          height="39"
-        />
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+          ><img
+            src="img/logo-htmlacademy.svg"
+            alt="logo html academy"
+            width="108"
+            height="39"
+        /></a>
         <div class="academy-link">
           Сделано:&nbsp;
           <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
@@ -458,60 +452,8 @@
         </fieldset>
       </form>
     </div>
-
     <div class="overlay"></div>
 
-    <script>
-      var link = document.querySelector(".map .btn");
-      var popup = document.querySelector(".modal-answer");
-      var close = document.querySelector(".modal-close");
-
-      var firstBtn = document.querySelector(".first-btn");
-      var secondBtn = document.querySelector(".second-btn");
-      var thirdBtn = document.querySelector(".third-btn");
-      var body = document.querySelector("body");
-
-      var iceCream = document.querySelector(".ice-cream-bg");
-      var lightBg = document.querySelector("body");
-
-      var textBg = document.querySelector(".text-bg");
-
-      link.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.add("modal");
-      });
-
-      close.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal");
-      });
-
-      firstBtn.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        body.style.backgroundColor = "#849d8f";
-        iceCream.style.backgroundImage = "url('img/ice_cream.png')";
-        lightBg.style.backgroundImage =
-          "url('img/background-icecream-light.png')";
-        textBg.innerHTML = "Крем-брюле и пломбир с малиновым джемом";
-      });
-
-      secondBtn.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        body.style.backgroundColor = "#8996a6";
-        iceCream.style.backgroundImage = "url('img/screen2.png')";
-        lightBg.style.backgroundImage = "url('img/screen2-light.png')";
-        textBg.innerHTML = "Шоколадный пломбир и лимонный сорбет";
-        firstBtn.style.backgroundColor = null;
-      });
-
-      thirdBtn.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        body.style.backgroundColor = "#9d8b84";
-        iceCream.style.backgroundImage = "url('img/screen3.png')";
-        lightBg.style.backgroundImage = "url('img/screen3-light.png')";
-        textBg.innerHTML = "Пломбир с помадкой и клубничный щербет";
-        firstBtn.style.backgroundColor = null;
-      });
-    </script>
+    <script src="./js/script-mini.js"></script>
   </body>
 </html>
