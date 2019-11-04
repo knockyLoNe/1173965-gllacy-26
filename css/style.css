@@ -83,7 +83,7 @@ a {
   filter: invert(1);
 }
 
-.search-icon:hover + .search-form {
+.search-icon:hover+.search-form {
   display: block;
 }
 
@@ -250,7 +250,7 @@ a {
   z-index: 2;
 }
 
-.site-navigation > li:hover > a {
+.site-navigation>li:hover>a {
   background-color: #f8f7f4;
   color: #323232;
 }
@@ -324,6 +324,10 @@ main {
   color: white;
 }
 
+/* Слайдер */
+
+
+
 .ice-cream-bg {
   position: relative;
   height: 580px;
@@ -385,12 +389,15 @@ main {
 .first-bg-color {
   background-color: #849d8f;
 }
+
 .second-bg-color {
   background-color: #8996a6;
 }
+
 .third-bg-color {
   background-color: #9d8b84;
 }
+
 /* Предложения */
 
 .offers {
@@ -527,6 +534,7 @@ main {
   padding: 0;
   list-style: none;
 }
+
 /* calc */
 .waffle li {
   position: relative;
@@ -625,6 +633,7 @@ main {
   border-radius: 22px;
   /* border-image: url("../img/bg-post.svg") 30 round round; */
 }
+
 .send-box form {
   display: flex;
   padding: 0 28px;
@@ -1025,9 +1034,11 @@ input[type='range'] {
 
   margin-left: 15px;
 }
+
 .form_radio input[type='radio'] {
   display: none;
 }
+
 .form_radio label {
   display: inline-block;
   vertical-align: middle;
@@ -1038,6 +1049,7 @@ input[type='range'] {
   line-height: 18px;
   user-select: none;
 }
+
 .form_radio label:before {
   content: '';
   display: inline-block;
@@ -1051,7 +1063,7 @@ input[type='range'] {
 }
 
 /* Checked */
-.form_radio input[type='radio']:checked + label:before {
+.form_radio input[type='radio']:checked+label:before {
   background: url(../img/radio-on.svg) 0 0 no-repeat;
 }
 
@@ -1061,7 +1073,7 @@ input[type='range'] {
 }
 
 /* Disabled */
-.form_radio input[type='radio']:disabled + label:before {
+.form_radio input[type='radio']:disabled+label:before {
   filter: grayscale(100%);
 }
 
@@ -1079,9 +1091,11 @@ input[type='range'] {
   display: inline-flex;
   margin-left: 10px;
 }
+
 .form-checkbox input[type='checkbox'] {
   display: none;
 }
+
 .form-checkbox label {
   display: inline-block;
   vertical-align: middle;
@@ -1092,6 +1106,7 @@ input[type='range'] {
   line-height: 18px;
   user-select: none;
 }
+
 .form-checkbox label:before {
   content: '';
   display: inline-block;
@@ -1105,7 +1120,7 @@ input[type='range'] {
 }
 
 /* Checked */
-.form-checkbox input[type='checkbox']:checked + label:before {
+.form-checkbox input[type='checkbox']:checked+label:before {
   background: url(../img/checkbox-on.svg) 0 0 no-repeat;
 }
 
@@ -1115,7 +1130,7 @@ input[type='range'] {
 }
 
 /* Disabled */
-.form-checkbox input[type='checkbox']:disabled + label:before {
+.form-checkbox input[type='checkbox']:disabled+label:before {
   filter: grayscale(100%);
 }
 
@@ -1219,8 +1234,8 @@ footer ul {
   text-decoration: underline;
 }
 
-.footer-links > li:hover a,
-.academy-link > a:hover {
+.footer-links>li:hover a,
+.academy-link>a:hover {
   color: #ffbc9e;
 }
 
@@ -1416,7 +1431,7 @@ body .modal {
   margin-top: 22px;
 }
 
-.modal + .overlay {
+.modal+.overlay {
   position: fixed;
   top: 0;
   left: 0;
